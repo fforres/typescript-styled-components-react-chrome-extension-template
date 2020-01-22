@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "⚛ + 💅 + TS = 💖",
+  "description": "Typescript react styled components extension",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_icon": "icon_16.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/backgroundPage.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_96.png"
+  },
+  "permissions": ["tabs", "activeTab", "notifications", "http://*/", "https://*/"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
